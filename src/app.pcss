@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-surface-950;
+}
+
+* {
+  box-sizing: border-box;
+  @apply motion-reduce:transition-none motion-reduce:animate-none;
+}
+
+article {
+  @apply flex flex-col gap-4 p-8 pb-12 items-center w-full;
+}
+
+article > * {
+  @apply max-w-screen-2xl w-full;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-headings-dark;
+}
+
+h1 {
+  @apply text-2xl md:text-3xl;
+}
+
+h2 {
+  @apply text-xl md:text-2xl;
+}
+
+h3 {
+  @apply text-lg md:text-xl;
+}
+
+h4 {
+  @apply md:text-lg;
+}
+
+section {
+  @apply gap-4 grid;
+}
+
+section:not(:first-child) {
+  @apply pt-5;
+}
+
+a {
+  @apply transition-all;
+}
+
+ol,
+ul {
+  @apply space-y-2;
+}
+
+ul > li {
+  @apply list-disc ml-4;
+}
+
+ol > li {
+  @apply list-decimal ml-4;
+}
+
+ol a:hover,
+ul a:hover {
+  @apply ml-1 underline;
+}
+
+p {
+  @apply max-w-[80ch];
+}
+
+table {
+  @apply bg-surface-900 rounded-xl overflow-hidden table-auto max-w-[80ch];
+}
+
+table tr.table-highlight td {
+  @apply font-bold;
+}
+
+table td {
+  @apply border-b-4 border-surface-950 p-4;
+}
+
+table tr:last-child td {
+  @apply border-b-0;
+}
+
+table tr.table-highlight {
+  @apply bg-surface-800;
+}
+
+video {
+  @apply max-w-[80ch];
+}
+
+hr {
+  @apply border border-surface-50 rounded-xl;
+}
+
+/* Utilities */
+.grid-auto-fit {
+  /*
+    --size é introduzido no atributo "style" do elemento. Define o
+    tamanho das children na grid. Se nenhum valor for dado a --size,
+    o tamanho assumido será 300px.
+   */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--size, 300px)), 1fr)
+  );
+}
+
+.grid-material-group {
+  @apply gap-1 overflow-hidden rounded-xl;
+}
+
+.grid-material-group :last-child {
+  @apply rounded-br-xl;
+}
+
+.card {
+  @apply p-4 rounded-md bg-surface-800 text-text-dark;
+}
+
+.card:hover {
+  @apply bg-surface-700;
+}
+
+.card h1 {
+  @apply text-xl;
+}
+
+.card h2 {
+  @apply text-lg;
+}
+
+.prose {
+  @apply max-w-[80ch] leading-relaxed;
+}
+
+.prose h1:not(:first-child) {
+  @apply mt-8;
+}
+
+.prose h2 {
+  @apply mt-4;
+}
+
+.prose p {
+  @apply text-justify;
+}
+
+.prose a {
+  @apply underline text-surface-400
+}
+
+.sidebar {
+  @apply bg-surface-700 h-full p-4 content-start;
+}
+
+.sidebar :is(h1, h2, h3, h4, h5, h6, p) {
+  @apply text-headings-dark;
+}
+
+.sidebar-layout {
+  @apply grid p-0 lg:grid-cols-sidebar-layout;
+}
+
+.sidebar-layout > :not(.sidebar) {
+  @apply p-8;
+}
+
+.link-button {
+  @apply transition-all bg-surface-600 px-2 py-1 rounded-md text-headings hover:text-text-dark hover:bg-surface-750;
+}
+
+.hot-nav a {
+  @apply bg-surface-800 text-text-dark py-2 px-4 rounded-md text-center
+  transition-all hover:bg-surface-900 flex items-center justify-center;
+}
+
+.image-inline {
+  @apply overflow-hidden rounded-xl grid gap-1;
+}
+
+.image-inline img {
+  @apply rounded-md;
+}
+
+.open-in-new {
+  @apply flex items-center gap-1 hover:underline hover:text-accent-450;
+}
+
+a.open-in-new svg {
+  @apply text-lg w-6;
+}
+
+.file-view {
+  @apply bg-surface-800 rounded-md p-4 grid-cols-2 justify-items-center grid;
+}
+
+@keyframes snowfall {
+  from {
+    top: 0;
+    left: 0;
+  }
+
+  10% {
+    left: 20px
+  }
+
+  20% {
+    left: -20px;
+  }
+
+  30% {
+    left: 20px;
+  }
+
+  40% {
+    left: -20px;
+  }
+
+  50% {
+    left: 20px;
+  }
+
+  60% {
+    left: -20px
+  }
+
+  70% {
+    left: 20px;
+  }
+
+  80% {
+    left: -20px;
+    opacity: 1;
+  }
+
+  90% {
+    left: 20px;
+  }
+
+  95% {
+    left: -20px
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+  to {
+    top: 100svh;
+    left: 0;
+    rotate: 2600deg;
+  }
+}
+
+.natal {
+  background-image: url('/natal-hero.jpg') !important;
+}
