@@ -1,0 +1,1 @@
+function r(e){e.preventDefault();const n=e.currentTarget,t=new URL(n.href).hash.replace("#",""),o=document.getElementById(t);window.scrollTo({top:o.offsetTop-5*16,behavior:"smooth"})}function c(e,n){if(n===""&&e!=="/")return!1;const t=new RegExp(`^/${n}(.*)$`);return e!==null&&t.test(e)}export{r as h,c as i};
