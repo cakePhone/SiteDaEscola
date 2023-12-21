@@ -1,0 +1,41 @@
+:root {
+  --surface-950: #eaf3ff;
+  --surface-900: #d5e7ff;
+  --surface-850: #bfdbff;
+  --surface-800: #aaceff;
+  --surface-750: #95c2ff;
+  --surface-700: #80b5ff;
+  --surface-650: #6aa8ff;
+  --surface-600: #549bff;
+  --surface-550: #3b8dff;
+  --surface-500: #1c7eff;
+  --surface-450: #176dde;
+  --surface-400: #125cbe;
+  --surface-350: #0d4c9e;
+  --surface-300: #083c80;
+  --surface-250: #052d63;
+  --surface-200: #021f48;
+  --surface-150: #01112e;
+  --surface-100: #000516;
+  --surface-50: #000103;
+
+  --accent-950: #fef8ee;
+  --accent-900: #fcf1dd;
+  --accent-850: #fbeacb;
+  --accent-800: #f9e3ba;
+  --accent-750: #f7dba8;
+  --accent-700: #f6d496;
+  --accent-650: #f4cd83;
+  --accent-600: #f2c56f;
+  --accent-550: #f0be58;
+  --accent-500: #eeb63d;
+  --accent-450: #cf9e34;
+  --accent-400: #b1862b;
+  --accent-350: #936f22;
+  --accent-300: #77591a;
+  --accent-250: #5c4412;
+  --accent-200: #42300a;
+  --accent-150: #2a1d04;
+  --accent-100: #140c01;
+  --accent-50: #030200;
+}

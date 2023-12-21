@@ -1,0 +1,94 @@
+:root {
+  --surface-950: #ffebe9;
+  --surface-900: #fed7d4;
+  --surface-850: #fcc3be;
+  --surface-800: #f9aea9;
+  --surface-750: #f59a94;
+  --surface-700: #f18480;
+  --surface-650: #eb6e6b;
+  --surface-600: #e55657;
+  --surface-550: #ff5133;
+  --surface-500: #de3a42;
+  --surface-450: #ba0324;
+  --surface-400: #9e021d;
+  --surface-350: #840116;
+  --surface-300: #6a0110;
+  --surface-250: #52000a;
+  --surface-200: #3b0005;
+  --surface-150: #250002;
+  --surface-100: #100001;
+  --surface-50: #020000;
+
+  --accent-950: #ebf4eb;
+  --accent-900: #d7ead7;
+  --accent-850: #c4dfc3;
+  --accent-800: #b0d5af;
+  --accent-750: #9cca9c;
+  --accent-700: #88df88;
+  --accent-650: #74b475;
+  --accent-600: #5faa61;
+  --accent-550: #489f4d;
+  --accent-500: #2d9437;
+  --accent-450: #26802e;
+  --accent-400: #1f6d26;
+  --accent-350: #185a1e;
+  --accent-300: #114816;
+  --accent-250: #0b360f;
+  --accent-200: #062608;
+  --accent-150: #021603;
+  --accent-100: #010801;
+  --accent-50: #000100;
+}
+
+header.header {
+  @apply bg-surface-500
+}
+
+.card.card {
+  @apply bg-surface-500
+}
+
+.card.card :is(h1, h2, h3, h4, h5, h6, p) {
+  @apply text-surface-950
+}
+
+.card img.invert {
+  @apply invert-0
+}
+
+.card svg {
+  @apply text-surface-950
+}
+
+.card.card:hover {
+  animation: card-hover 1s forwards;
+  @apply bg-accent-700
+}
+
+@keyframes card-hover {
+  0% {
+    scale: 1;
+    background-color: var(--surface-500)
+  }
+
+  12.5% {
+    scale: 0.98;
+  }
+
+  25% {
+    scale: 1;
+    background-color: orange;
+  }
+
+  50% {
+    background-color: var(--accent-600);
+  }
+
+  75% {
+    background-color: dodgerblue;
+  }
+
+  100% {
+    background-color: var(--accent-500);
+  }
+}

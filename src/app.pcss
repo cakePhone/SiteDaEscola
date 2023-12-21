@@ -12,6 +12,11 @@ body {
   @apply motion-reduce:transition-none motion-reduce:animate-none;
 }
 
+header {
+  @apply p-4 flex items-center sticky top-0 bg-surface-700 w-full place-content-between text-headings
+  transition-all z-50 min-h-[4.5rem];
+}
+
 article {
   @apply flex flex-col gap-4 p-8 pb-12 items-center w-full;
 }
@@ -121,7 +126,7 @@ hr {
 }
 
 .grid-material-group {
-  @apply gap-1 overflow-hidden rounded-xl;
+  @apply gap-1 overflow-clip rounded-xl;
 }
 
 .grid-material-group :last-child {
@@ -129,7 +134,7 @@ hr {
 }
 
 .card {
-  @apply p-4 rounded-md bg-surface-800 text-text-dark;
+  @apply p-4 rounded-md bg-surface-700 text-text-dark;
 }
 
 .card:hover {

@@ -10,7 +10,7 @@
   import {onMount} from "svelte";
 
   const limiteNoticias: number = 10;
-  let noticiasRecentes: typeof noticias = noticias.slice(0, limiteNoticias);
+  let noticiasRecentes: typeof noticias = noticias.slice(1, limiteNoticias);
 
   let y: number;
   let windowWidth: number;
@@ -82,10 +82,12 @@
 <article>
   <section id="noticias">
     <h1>Notícias Recentes</h1>
-    <h3 class="p-4 bg-accent-700 text-headings-dark rounded-xl">
-      A partir do dia 6 de novembro de 2023, os alunos que trouxerem "marmita" podem dirigir-se, das 12:00 às 14:00
-      horas, junto da Sala da Associação de Estudantes.
-    </h3>
+    <div class="p-4 bg-accent-700 text-headings-dark rounded-xl">
+      <h3>{noticias[0].title}</h3>
+      {#if noticias[0].description}
+        <p>{noticias[0].description}</p>
+      {/if}
+    </div>
     <div class="grid grid-auto-fit grid-material-group" style="--size: 300px;">
       {#each noticiasRecentes as noticia}
         <Noticia
