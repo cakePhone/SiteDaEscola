@@ -157,7 +157,7 @@
       <Galaxia thumbnail="/universo-esa/logo_eqavet.jpg" title="EQAVET" description="Selo de Conformidade EQAVET"
                href="https://esamarante.edu.pt/eqavet/index.html"/>
 
-      <Galaxia thumbnail="/universo-esa/ideia.jpg" title="IDEIA.PT" description="Gabinete IDEIA.pt"/>
+      <Galaxia thumbnail="/universo-esa/ideia.jpg" title="IDEIA.PT" description="Gabinete IDEIA.pt" href="/galaxias/ideia-pt"/>
 
       <Galaxia thumbnail="/universo-esa/emaei.png" title="EMAEI"
                description="Equipa Multidisciplinar de Apoio à Educação Inclusiva"/>
