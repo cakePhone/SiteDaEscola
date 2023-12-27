@@ -2,6 +2,10 @@
   import Video from '$lib/components/video.svelte'
 </script>
 
+<svelte:head>
+  <title>ESA - Dia Mundial da Diabetes</title>
+</svelte:head>
+
 <article>
   <section class="prose">
     <h1>Dia Mundial da Diabetes</h1>

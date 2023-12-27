@@ -2,6 +2,10 @@
   import ImageGaleria from "$lib/components/imageGaleria.svelte";
 </script>
 
+<svelte:head>
+  <title>ESA - Dia Nacional do Cancro da Mama</title>
+</svelte:head>
+
 <article>
   <section class="prose">
     <h1>Dia Nacional do Cancro da Mama</h1>
