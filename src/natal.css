@@ -40,8 +40,16 @@
   --accent-50: #000100;
 }
 
+html, body {
+  @apply !bg-surface-850
+}
+
 header.header {
   @apply bg-surface-500
+}
+
+header.header.scroll-past-screen {
+  background: color-mix(in srgb, var(--surface-850), transparent 20%);
 }
 
 .card.card {
