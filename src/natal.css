@@ -65,6 +65,10 @@ header.header {
   @apply bg-accent-700
 }
 
+#scroll-to-top {
+  @apply bg-surface-500
+}
+
 @keyframes card-hover {
   0% {
     scale: 1;
