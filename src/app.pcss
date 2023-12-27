@@ -17,6 +17,79 @@ header {
   transition-all z-50 min-h-[4.5rem];
 }
 
+header[data-hide="true"] {
+  @apply -top-32;
+}
+
+header[data-open="true"] {
+  @apply h-screen w-screen p-4 flex flex-col items-center place-content-evenly;
+}
+
+header[data-open="true"] :is(nav, h1) {
+  @apply flex flex-col text-2xl text-center;
+}
+
+header[data-open="true"] a {
+  @apply p-3 px-4 text-2xl;
+}
+
+header[data-open="true"] label {
+  @apply text-3xl;
+}
+
+header.scroll-past-screen {
+  background: color-mix(in srgb, var(--surface-950), transparent 20%);
+  @apply text-headings-dark backdrop-blur-sm md:backdrop-blur-md
+}
+
+header:not(.scroll-past-screen) h1 {
+  @apply text-headings drop-shadow-md
+}
+
+header nav {
+  @apply hidden gap-1 rounded-xl overflow-hidden xl:flex
+}
+
+header nav a {
+  @apply font-bold flex items-center gap-1 transition-all bg-surface-850 rounded-md p-2 px-3 hover:bg-surface-950 text-xl text-headings-dark;
+}
+
+header nav a.current-page {
+  @apply bg-accent-750 hover:bg-accent-850;
+}
+
+header.scroll-past-screen nav a {
+  @apply bg-transparent hover:bg-surface-750 rounded-xl
+}
+
+header.scroll-past-screen nav a.current-page {
+  @apply bg-accent-650 hover:bg-accent-750
+}
+
+footer {
+  @apply bg-surface-100 p-8 flex flex-col items-center;
+}
+
+footer > div {
+  @apply max-w-screen-2xl w-full
+}
+
+footer :is(h1, h2, h3, h4, h5, h5, h6, p, a) {
+  @apply text-headings
+}
+
+footer hr {
+  @apply my-4 border-headings opacity-40
+}
+
+footer a {
+  @apply underline hover:no-underline
+}
+
+footer p {
+  @apply max-w-none
+}
+
 article {
   @apply flex flex-col gap-4 p-8 pb-12 items-center w-full;
 }
