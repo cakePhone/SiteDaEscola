@@ -159,7 +159,7 @@
 
       <Galaxia thumbnail="/universo-esa/ideia.jpg" title="IDEIA.PT" description="Gabinete IDEIA.pt" href="/galaxias/ideia-pt"/>
 
-      <Galaxia thumbnail="/universo-esa/emaei.png" title="EMAEI"
+      <Galaxia thumbnail="/universo-esa/emaei.png" title="EMAEI" href="/galaxias/emaei"
                description="Equipa Multidisciplinar de Apoio à Educação Inclusiva"/>
 
       <Galaxia thumbnail="/universo-esa/clube_patrimonio.png" title="Clube do Património" description=""
