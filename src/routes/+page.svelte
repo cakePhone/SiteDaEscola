@@ -6,11 +6,20 @@
 
   import {handleAnchorClick} from "$lib";
 
-  import noticias from "$lib/noticias.json";
   import {onMount} from "svelte";
 
+  type tipoNoticia = {
+    title: string,
+    image: string,
+    description: string,
+    link: string,
+    data: string
+  }
+
+  let noticias: tipoNoticia[]
+
   const limiteNoticias: number = 10;
-  let noticiasRecentes: typeof noticias = noticias.slice(1, limiteNoticias);
+  let noticiasRecentes: typeof noticias
 
   let y: number;
   let windowWidth: number;
@@ -28,13 +37,18 @@
     }
   }
 
-  onMount(() => {
+  onMount(async () => {
     if((data.getMonth() === 11 && data.getDate() > 10) || (data.getMonth() === 0 && data.getDate() < 10)) epocaNatalicia = true;
     reassignSpacing(windowWidth)
+
+    let response = await fetch("/noticias.json")
+    let noticias = await response.json()
+    noticiasRecentes = noticias.slice(1, limiteNoticias)
   })
 
   $: reassignSpacing(windowWidth)
   $: nFlocos = (windowWidth > 900) ? 80 : 40;
+  $: noticias = noticias
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerWidth={windowWidth}></svelte:window>
@@ -82,22 +96,26 @@
 <article>
   <section id="noticias">
     <h1>Notícias Recentes</h1>
-    <div class="p-4 bg-accent-700 text-headings-dark rounded-xl">
-      <h3>{noticias[0].title}</h3>
-      {#if noticias[0].description}
-        <p>{noticias[0].description}</p>
-      {/if}
-    </div>
+    {#if noticias}
+      <div class="p-4 bg-accent-700 text-headings-dark rounded-xl">
+          <h3>{noticias[0].title}</h3>
+          {#if noticias[0].description}
+            <p>{noticias[0].description}</p>
+          {/if}
+      </div>
+    {/if}
     <div class="grid grid-auto-fit grid-material-group" style="--size: 300px;">
-      {#each noticiasRecentes as noticia}
-        <Noticia
-            image="{noticia.image}"
-            title="{noticia.title}"
-            description="{noticia.description}"
-            date="{noticia.data}"
-            link="{noticia.link}"
-        />
-      {/each}
+      {#if noticiasRecentes}
+        {#each noticiasRecentes as noticia}
+          <Noticia
+              image="{noticia.image}"
+              title="{noticia.title}"
+              description="{noticia.description}"
+              date="{noticia.data}"
+              link="{noticia.link}"
+          />
+        {/each}
+      {/if}
     </div>
     <div class="flex justify-center">
       <a href="noticias" class="p-4 bg-accent-700 transition-all hover:bg-accent-600 rounded-xl">Mais Notícias</a>

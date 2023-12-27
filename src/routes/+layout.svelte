@@ -118,20 +118,20 @@
   <div class="flex flex-col gap-6 place-content-between md:flex-row">
     <div class="flex gap-4 h-fit flex-wrap [&>*]:rounded-md [&>*]:h-fit [&>*]:md:h-24 [&>*]:bg-white">
       <img
-          src="$lib/images/logo_poch_ue1.png"
+          src="/logo_poch_ue1.png"
           alt="Cofinanciado por: POCH, União Europeia, Portugal 2020"
           class="p-2"
       />
       <img
-          src="$lib/images/LogoESA.jpg"
+          src="/LogoESA.jpg"
           alt="Logo da Escola Secundária/3 de Amarante"
       />
       <img
-          src="$lib/images/selo_peq.png"
+          src="/selo_peq.png"
           alt="Logo da Escola Secundária/3 de Amarante"
       />
       <img
-          src="$lib/images/selo_escola_saudavel_peq.png"
+          src="/selo_escola_saudavel_peq.png"
           alt="Logo da Escola Secundária/3 de Amarante"
       />
     </div>
