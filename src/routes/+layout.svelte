@@ -104,8 +104,8 @@
   </label>
 </header>
 
-<button on:click={scrollToTop} class:!bottom-4={y > innerHeight / 3}
-        class="fixed -bottom-12 right-4 bg-surface-600 h-12 w-12 rounded-xl text-headings transition-all">
+<button on:click={scrollToTop} class:!bottom-4={y > innerHeight / 3} id="scroll-to-top"
+        class="fixed -bottom-12 right-4 bg-surface-600 h-12 w-12 rounded-xl text-headings transition-all shadow-xl shadow-surface-100/50">
   <Icon icon="ic:round-arrow-drop-up" class="h-12 w-12"/>
 </button>
 
@@ -136,13 +136,13 @@
     </div>
   </div>
 
-  <div>
+  <div class="pt-8">
     <h2>Contatos</h2>
-    <hr class="my-4"/>
-    <div class="contacts">
+    <hr/>
+    <div class="grid grid-auto-fit gap-2">
       <div>
         <h3>Telefone</h3>
-        <p>255410190</p>
+        <a href="phoneto:255410190">255410190</a>
       </div>
 
       <div>
@@ -157,7 +157,18 @@
           4600-018 Amarante
         </p>
       </div>
+
+      <div>
+        <h3>Manutenção do site</h3>
+        <a href="mailto:pedrocarvalho@esamarante.edu.pt">Prof. Pedro Carvalho</a>
+      </div>
     </div>
+    <hr/>
+    <p>
+      &copy;Copyright 2024 - Escola Secundária de Amarante | Desenvolvido por
+      <a href="https://cakephone.github.io/" target="_blank">Miguel André Leal Santos</a>,
+      um aluno da escola.
+    </p>
   </div>
 </footer>
 
@@ -212,18 +223,26 @@
   }
 
   footer {
-    @apply bg-surface-100 p-4 flex flex-col text-text justify-between gap-6;
+    @apply bg-surface-100 p-8 flex flex-col items-center;
   }
 
-  footer :is(h1, h2, h3, h4, h5, h6, p, a) {
-    @apply text-headings text-xl;
+  footer > div {
+    @apply max-w-screen-2xl w-full
   }
 
-  .contacts {
-    @apply flex gap-10 flex-col md:flex-row;
+  footer :is(h1, h2, h3, h4, h5, h5, h6, p, a) {
+    @apply text-headings
   }
 
-  .contacts h3 {
-    @apply font-bold text-lg;
+  footer hr {
+    @apply my-4 border-headings opacity-40
+  }
+
+  footer a {
+    @apply underline hover:no-underline
+  }
+
+  footer p {
+    @apply max-w-none
   }
 </style>
