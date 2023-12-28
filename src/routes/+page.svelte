@@ -189,7 +189,8 @@
       <Galaxia thumbnail="/universo-esa/de.jpg" title="Desporto Escolar" description="Desporto Escolar da ESA"
                href="https://desportoescolaresa.blogspot.com/"/>
 
-      <Galaxia thumbnail="/universo-esa/cartaz_mosaico.jpg" title="PJ" description="Parlamento dos Jovens"/>
+      <Galaxia thumbnail="/universo-esa/cartaz_mosaico.jpg" title="PJ" description="Parlamento dos Jovens"
+               href="/galaxias/parlamento-jovens"/>
 
       <Galaxia thumbnail="/universo-esa/clube_ciencia_viva.png" title="Clube Ciência Viva"
                description="Site do Clube Ciência Viva"
