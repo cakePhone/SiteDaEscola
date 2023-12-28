@@ -3,7 +3,7 @@
   import Icon from "@iconify/svelte";
   import {page} from "$app/stores";
 
-  import {isCurrentPage} from "$lib";
+  import {isCurrentPage, scrollToTop} from "$lib";
 
   let y: number = 1;
   let lastY: number = 1;
@@ -37,14 +37,6 @@
     // baixo
     if (y - lastScrollUpY > innerHeight / 3)
       return navHide = true;
-  }
-
-  function scrollToTop() {
-
-    window!.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    })
   }
 
   // Natal
