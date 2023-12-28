@@ -173,7 +173,7 @@
                description="Os projetos ERASMUS+ da ESA" href="https://www.esamarante.edu.pt/erasmus/"/>
 
       <Galaxia thumbnail="/universo-esa/logo_eqavet.jpg" title="EQAVET" description="Selo de Conformidade EQAVET"
-               href="https://esamarante.edu.pt/eqavet/index.html"/>
+               href="/galaxias/eqavet"/>
 
       <Galaxia thumbnail="/universo-esa/ideia.jpg" title="IDEIA.PT" description="Gabinete IDEIA.pt" href="/galaxias/ideia-pt"/>
 
