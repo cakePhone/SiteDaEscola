@@ -58,11 +58,11 @@
     class:hidden={!popup} use:swipe={{ timeframe: 300, minSwipeDistance: 60 }} on:swipe={swipeImage}
 >
   <div class="flex text-headings items-center">
-    <button on:click={() => switchImage(false)} class:hidden={popupViewIndex === 1}>
+    <button on:click={() => {if (popupViewIndex > 0) switchImage(false)}} class:opacity-0={popupViewIndex <= 0}>
       <Icon icon="ic:round-arrow-left" class="h-16 w-16 hidden lg:block"/>
     </button>
     <img {src} alt="" class="min-w-full lg:w-[50vw]"/>
-    <button on:click={() => switchImage(true)} class:hidden={popupViewIndex === 40}>
+    <button on:click={() => {if (popupViewIndex < 40) switchImage(true)}} class:opacity-0={popupViewIndex >= 39}>
       <Icon icon="ic:round-arrow-right" class="h-16 w-16 hidden lg:block"/>
     </button>
   </div>
