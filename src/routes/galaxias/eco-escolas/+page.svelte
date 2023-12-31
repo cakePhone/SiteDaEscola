@@ -66,6 +66,14 @@
                title="Reunião Eco-Escolas com alunos" date="02/2022" link="#reuniao-alunos" description=""/>
       <Noticia image="/universo-esa/galaxias/eco-escolas/noticias/reuniao-entidades.jpg" openInNew={false}
                title="Reunião Eco-Escolas com alunos" date="02/2022" link="#reuniao-entidades" description=""/>
+      <Noticia image="/universo-esa/galaxias/eco-escolas/noticias/alunos-plantam.jpg"
+               title="Alunos em Amarante Plantam árvores no Marão" description="Reportagem Novum Canal"
+               date="14/02/2023"
+               link="https://novumcanal.pt/2023/02/amarante/c-video-alunos-de-amarante-plantam-arvores-no-marao/"/>
+      <Noticia title="ESA sensabiliza alunos para 'flagelo dos incêndios'" date="11/02/2023"
+               description="Entrevista da Diretora Ana Cristina Santos - Jornal A Verdade"
+               image="https://i0.wp.com/averdade.com/wp-content/uploads/2023/02/diretora-escola-secundaria-amarante.jpg?w=1500&ssl=1"
+               link="https://averdade.com/escola-secundaria-de-amarante-sensibiliza-alunos-para-o-flagelo-dos-incendios/"/>
     </div>
   </section>
   <section id="reuniao-alunos" class="prose breakout">
