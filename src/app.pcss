@@ -182,7 +182,7 @@ video {
 }
 
 hr {
-  @apply border border-surface-50 rounded-xl my-2;
+  @apply border border-surface-50 rounded-xl my-2 max-w-screen-lg;
 }
 
 /* Utilities */
@@ -207,7 +207,7 @@ hr {
 }
 
 .card {
-  @apply p-4 rounded-md bg-surface-700 text-text-dark;
+  @apply p-4 rounded-md bg-surface-700 text-text-dark !no-underline;
 }
 
 .card:hover {
@@ -272,7 +272,7 @@ hr {
 }
 
 .image-inline {
-  @apply overflow-hidden rounded-xl grid gap-1;
+  @apply overflow-hidden rounded-xl flex gap-1;
 }
 
 .image-inline img {
