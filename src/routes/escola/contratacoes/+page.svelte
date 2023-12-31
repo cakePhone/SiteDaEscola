@@ -2,6 +2,10 @@
   import OpenInNew from "$lib/components/openInNew.svelte"
 </script>
 
+<svelte:head>
+  <title>ESA - Contratações</title>
+</svelte:head>
+
 <article>
   <section class="prose">
     <h1>Contratações da Escola</h1>

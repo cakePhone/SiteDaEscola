@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>ESA - Serviços</title>
+</svelte:head>
+
 <article>
   <section class="prose">
     <h1>Serviços e horários de funcionamento</h1>

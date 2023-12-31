@@ -3,6 +3,10 @@
   import Icon from "@iconify/svelte";
 </script>
 
+<svelte:head>
+  <title>ESA - Oferta Educativa</title>
+</svelte:head>
+
 <article>
   <section class="prose">
     <h1>Oferta Educativa e Formativa 2023-2024</h1>

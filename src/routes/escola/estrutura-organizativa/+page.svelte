@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>ESA - Estrutura Organizativa</title>
+</svelte:head>
+
 <article>
   <section class="prose">
     <h1>Estrutura e Organização Pedagógica e Administrativa</h1>
