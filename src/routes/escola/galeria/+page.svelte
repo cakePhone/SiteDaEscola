@@ -50,7 +50,7 @@
 </script>
 
 <svelte:head>
-  <title>ESA - Escola | Galeria</title>
+  <title>ESA - Galeria</title>
 </svelte:head>
 
 <section
