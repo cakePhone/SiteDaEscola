@@ -197,7 +197,7 @@
                href="https://sites.google.com/esamarante.edu.pt/ciencia-viva-esa/p%C3%A1gina-inicial"/>
 
       <Galaxia thumbnail="/universo-esa/logo_eco.png" title="Eco-Escolas"
-               description="Clube Eco-Escolas"/>
+               description="Clube Eco-Escolas" href="/galaxias/eco-escolas"/>
     </div>
   </section>
 
