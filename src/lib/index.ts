@@ -7,10 +7,10 @@ export function handleAnchorClick(event: MouseEvent) {
 	const anchorId: string = new URL(link!.href).hash.replace("#", "");
 	const anchor: HTMLElement | null = document.getElementById(anchorId);
 
-	window.scrollTo({
-		top: anchor!.offsetTop - 5 * 16,
-		behavior: "smooth",
-	});
+	// window.scrollTo({
+	// 	top: anchor!.offsetTop - 5 * 16,
+	// 	behavior: "smooth",
+	// });
 }
 
 export function isCurrentPage(url: string | null, pageName: string): boolean {

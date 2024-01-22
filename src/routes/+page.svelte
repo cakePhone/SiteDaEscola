@@ -67,11 +67,11 @@
   <h2 class="text-xl md:text-2xl font-bold text-headings" style="text-shadow: 0 2px 10px rgb(0 0 0 / 80%)">Uma escola para todos</h2>
   <nav class="grid mt-20 lg:w-[40vw] lg:justify-self-center grid-material-group grid-auto-fit hot-nav"
        style="--size: 150px;">
-    <a href="#noticias" on:click={handleAnchorClick}>Notícias</a>
+    <a href="#noticias">Notícias</a>
     <!--<a href="#guias" on:click={handleAnchorClick}>Guias</a>-->
-    <a href="#ano-letivo" on:click={handleAnchorClick}>Ano Letivo</a>
-    <a href="#universo-esa" on:click={handleAnchorClick}>Universo ESA</a>
-    <a href="#acessos" on:click={handleAnchorClick}>Acessos</a>
+    <a href="#ano-letivo">Ano Letivo</a>
+    <a href="#universo-esa">Universo ESA</a>
+    <a href="#acessos">Acessos</a>
   </nav>
 
   <div class:opacity-0={y > 200}
